@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NeedGiveController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <ListView layoutX="-3.0" layoutY="58.0" prefHeight="340.0" prefWidth="180.0" />
+            <Label alignment="CENTER" layoutX="43.0" layoutY="14.0" prefHeight="27.0" prefWidth="89.0" text="List">
+               <font>
+                  <Font name="Ink Free" size="24.0" />
+               </font>
+            </Label>
+            <ListView layoutX="1.0" layoutY="55.0" prefHeight="347.0" prefWidth="173.0" />
+            <Label alignment="CENTER" layoutX="27.0" layoutY="71.0" prefHeight="39.0" prefWidth="121.0" text="Enter item">
+               <font>
+                  <Font name="Ink Free" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="27.0" layoutY="121.0" prefHeight="33.0" prefWidth="121.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="menu" layoutX="315.0" layoutY="343.0" mnemonicParsing="false" onAction="#firstScene" text="MENU">
+               <font>
+                  <Font name="Ink Free" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="62.0" fitWidth="89.0" layoutX="307.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/img/kisspng-house-clip-art-housing-cliparts-5a79b9d6e34e74.0473159715179268709311.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="133.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/6022753_0.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="64.0" layoutY="14.0" prefHeight="39.0" prefWidth="300.0" text="Inventory">
+               <font>
+                  <Font name="Ink Free" size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.33668341708542715" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NeedGiveController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label id="title" alignment="CENTER" layoutX="156.0" layoutY="39.0" prefHeight="52.0" prefWidth="287.0" text="A THOUSAND HANDS" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Ink Free" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="129.0" fitWidth="160.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+            <Image url="@../../bin/img/kids-love-globe-conceptual-groups-of-children-vector-23991673%20(2).jpg" />
+            </image>
+            </ImageView>
+            <ImageView fitHeight="129.0" fitWidth="160.0" layoutX="478.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+            <Image url="@../../bin/img/kids-love-globe-conceptual-groups-of-children-vector-23991673%20(2).jpg" />
+            </image>
+            </ImageView>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" stylesheets="@../../bin/application/application.css">
+         <children>
+            <Button id="give" layoutX="66.0" layoutY="204.0" mnemonicParsing="false" onAction="#secondScene" text="GIVE" textAlignment="CENTER" />
+            <Button id="need" layoutX="274.0" layoutY="204.0" mnemonicParsing="false" onAction="#secondScene" text="NEED" textAlignment="CENTER" />
+            <Button id="inventory" layoutX="457.0" layoutY="204.0" mnemonicParsing="false" onAction="#thirdScene" text="INVENTORY" />
+            <ImageView fitHeight="138.0" fitWidth="172.0" layoutX="434.0" layoutY="45.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+            <image>
+            <Image url="@../../bin/img/inventory-planning-1280x960px-640x480.png" />
+            </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="148.0" layoutX="27.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+            <Image url="@../../bin/img/Fotolia_77600976_XS.jpg" />
+            </image>
+            </ImageView>
+            <ImageView fitHeight="148.0" fitWidth="138.0" layoutX="240.0" layoutY="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+            <image>
+            <Image url="@../../bin/img/business-man-raising-hand-cartoon-character-vector-6804790%20(2).jpg" />
+            </image>
+            </ImageView>
+            <Line fx:id="lineb" endX="100.0" layoutX="197.0" layoutY="128.0" startX="-100.0" strokeWidth="2.0" styleClass="application.css" />
+            <Line fx:id="linea" endX="100.0" fill="BLACK" layoutX="434.0" layoutY="130.0" startX="-100.0" strokeWidth="2.0" />
+            
+         </children></AnchorPane>
+  </items>
+</SplitPane>

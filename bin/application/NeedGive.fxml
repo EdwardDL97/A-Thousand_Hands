@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.NeedGiveController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="109.0" layoutX="32.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/464789-200.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="103.0" fitWidth="109.0" layoutX="35.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/download.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="95.0" fitWidth="133.0" layoutX="20.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/kisspng-shopping-cart-grocery-store-supermarket-retail-buy-sell-5b3b9d26ca7356.4167966515306335108293.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="39.0" layoutY="117.0" prefHeight="27.0" prefWidth="103.0" text="userid">
+               <font>
+                  <Font name="Ink Free" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="39.0" layoutY="360.0" prefHeight="27.0" prefWidth="103.0" text="amount">
+               <font>
+                  <Font name="Ink Free" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="39.0" layoutY="222.0" prefHeight="27.0" prefWidth="103.0" text="item">
+               <font>
+                  <Font name="Ink Free" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="400.0">
+         <children>
+            <Button layoutX="328.0" layoutY="345.0" mnemonicParsing="false" onAction="#firstScene" text="Menu" />
+            <ImageView fitHeight="62.0" fitWidth="89.0" layoutX="309.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/kisspng-house-clip-art-housing-cliparts-5a79b9d6e34e74.0473159715179268709311.jpg" />
+               </image>
+            </ImageView>
+            <TextField id="text" fx:id="userText" layoutX="24.0" layoutY="37.0" onAction="#message" prefHeight="77.0" prefWidth="224.0" />
+            <TextField fx:id="itemText" layoutX="24.0" layoutY="161.0" onAction="#message" prefHeight="77.0" prefWidth="224.0" />
+            <TextField fx:id="amountText" layoutX="24.0" layoutY="275.0" onAction="#message" prefHeight="77.0" prefWidth="224.0" />
+            <Button layoutX="273.0" layoutY="136.0" mnemonicParsing="false" onAction="#message" prefHeight="51.0" prefWidth="44.0" text="+" />
+            <Button layoutX="341.0" layoutY="136.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="44.0" text="-" />
+            <Label alignment="CENTER" layoutX="24.0" layoutY="114.0" prefHeight="27.0" prefWidth="224.0" text="Enter userid">
+               <font>
+                  <Font name="Ink Free" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="345.0" prefHeight="27.0" prefWidth="224.0" text="Enter amount">
+               <font>
+                  <Font name="Ink Free" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="236.0" prefHeight="27.0" prefWidth="224.0" text="Enter item">
+               <font>
+                  <Font name="Ink Free" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="273.0" layoutY="31.0" prefHeight="103.0" prefWidth="125.0" text="Need/Give">
+               <font>
+                  <Font name="Ink Free" size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
